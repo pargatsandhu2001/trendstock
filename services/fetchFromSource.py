@@ -18,7 +18,7 @@ class masterStockList:
 
 # Import the list from the database. The static list stockListTest to be replaced by a database call.
     def getList(self):
-        stockList = ['SNAP', 'PYPL']
+        stockList = ['SNAP', 'PYPL', 'SQ']
         print("Entry into function getStockList")
         return stockList
 
