@@ -40,9 +40,9 @@ class fetchFromSource:
 
             def loadIntoDB(s):
                 # Read file from hard drive
-                dailyFile = open("/Users/gagan/stocktrends/daily_files/{}.csv".format(s), "r")  # open file in current directory
+                dailyFile = open("/Users/gagan/trendstock/data_files/{}.csv".format(s), "r")  # open file in current directory
                 weeklyStats = []
-                stockdb1 = '/Users/gagan/stocktrends/stocktrends.db'  # name of the sqlite database file
+                stockdb1 = '/Users/gagan/trendstock_data/trendstock.db'  # name of the sqlite database file
                 # Connecting to the database file
                 conn1 = sqlite3.connect(stockdb1)
                 sql = ''' INSERT INTO stocks_raw(symbol, timestamp, open, high, low, close, adjusted_close, volume, dividend_amount, load_timestamp) VALUES(?,?,?,?,?,?,?,?,?,?)'''
@@ -57,7 +57,7 @@ class fetchFromSource:
 
                 cursor.close()
                 conn1.close()
-                return
+            return
 
             loadIntoDB(s)
 
