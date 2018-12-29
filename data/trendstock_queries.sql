@@ -11,32 +11,19 @@ group by c.symbol, c.name, c.sector, c.industry
 order by c.symbol;
 
 
-CREATE TABLE "COMPANY_LIST" (
-  `SYMBOL`               TEXT    NOT NULL UNIQUE,
-  `NAME`                 TEXT,
-  `EXCHANGE_NAME`        TEXT,
-  `PRICE_2017_05_27`     NUMERIC,
-  `MARKETCAP_2017_05_27` NUMERIC,
-  `IPOYEAR`              INTEGER,
-  `SECTOR`               TEXT,
-  `INDUSTRY`             TEXT,
-  `SUMMARY_QUOTE`        TEXT,
-  `ROW_ID`               INTEGER NOT NULL UNIQUE,
-  PRIMARY KEY (`ROW_ID`)
+CREATE TABLE "company_list" (
+  `symbol`        TEXT NOT NULL UNIQUE,
+  `name`          TEXT,
+  `exchange_name` TEXT,
+  `stock_price`   NUMERIC,
+  `market_cap`    NUMERIC,
+  `ipo_year`      INTEGER,
+  `sector`        TEXT,
+  `industry`      TEXT,
+  `summary_quote` TEXT,
+  PRIMARY KEY (`symbol`)
 );
 
-CREATE TABLE `companylist` (
-  `Symbol`,
-  `Name`,
-  `EXCHANGE_NAME`,
-  `LastSale`,
-  `MarketCap`,
-  `IPOyear`,
-  `Sector`,
-  `Industry`,
-  `SummaryQuote`,
-  `field10`
-);
 
 CREATE TABLE "stocks_raw" (
   `symbol`          TEXT,
@@ -50,15 +37,4 @@ CREATE TABLE "stocks_raw" (
   `dividend_amount` NUMERIC,
   `load_timestamp`  DATETIME,
   PRIMARY KEY (`symbol`, `timestamp`)
-);
-
-CREATE TABLE "stocks_raw1" (
-  `timestamp`       DATE,
-  `open`            NUMERIC,
-  `high`            NUMERIC,
-  `low`             NUMERIC,
-  `close`           NUMERIC,
-  `adjusted_close`  NUMERIC,
-  `volume`          NUMERIC,
-  `dividend_amount` NUMERIC
-);
+)
