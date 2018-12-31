@@ -13,6 +13,8 @@ group by c.symbol, c.name, c.sector, c.industry \
 order by c.symbol;'
 
 app.use("/list", (req, res, next) => {
+    res.header("Access-Control-Allow-Origin", "*");
+    
     var sqlite3 = require('sqlite3').verbose();
     var db = new sqlite3.Database('/Users/Gagan/trendstock_data/trendstock.db');
 
