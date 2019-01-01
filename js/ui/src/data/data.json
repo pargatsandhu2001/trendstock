@@ -1,0 +1,79 @@
+[  
+    {  
+       "symbol":"A",
+       "name":"Agilent Technologies, Inc.",
+       "sector":"Capital Goods",
+       "industry":"Biotechnology: Laboratory Analytical Instruments",
+       "avg_market_cap":19102710000,
+       "min_stock_price":64.6293,
+       "max_stock_price":65.96,
+       "avg_stock_price":65.29,
+       "avg_volume":56999952
+    },
+    {  
+       "symbol":"AA",
+       "name":"Alcoa Corporation",
+       "sector":"Capital Goods",
+       "industry":"Metal Fabrications",
+       "avg_market_cap":6129670522,
+       "min_stock_price":26.6,
+       "max_stock_price":34.99,
+       "avg_stock_price":30.8,
+       "avg_volume":86037959
+    },
+    {  
+       "symbol":"AAC",
+       "name":"AAC Holdings, Inc.",
+       "sector":"Health Care",
+       "industry":"Medical Specialities",
+       "avg_market_cap":162485791,
+       "min_stock_price":1.41,
+       "max_stock_price":5.51,
+       "avg_stock_price":3.46,
+       "avg_volume":5823829
+    },
+    {  
+       "symbol":"PIH",
+       "name":"1347 Property Insurance Holdings, Inc.",
+       "sector":"Finance",
+       "industry":"Property-Casualty Insurers",
+       "avg_market_cap":44435092,
+       "min_stock_price":3.75,
+       "max_stock_price":5.9,
+       "avg_stock_price":4.83,
+       "avg_volume":212989
+    },
+    {  
+       "symbol":"PYPL",
+       "name":"PayPal Holdings, Inc.",
+       "sector":"Miscellaneous",
+       "industry":"Business Services",
+       "avg_market_cap":61492421540,
+       "min_stock_price":83.26,
+       "max_stock_price":84.19,
+       "avg_stock_price":83.72,
+       "avg_volume":238686937
+    },
+    {  
+       "symbol":"SNAP",
+       "name":"Snap Inc.",
+       "sector":"Technology",
+       "industry":"Computer Software: Programming, Data Processing",
+       "avg_market_cap":25021045444,
+       "min_stock_price":5.71,
+       "max_stock_price":6.61,
+       "avg_stock_price":6.16,
+       "avg_volume":502736941
+    },
+    {  
+       "symbol":"SQ",
+       "name":"Square, Inc.",
+       "sector":"Technology",
+       "industry":"Computer Software: Prepackaged Software",
+       "avg_market_cap":8353743079,
+       "min_stock_price":55.87,
+       "max_stock_price":73.45,
+       "avg_stock_price":64.66,
+       "avg_volume":403149323
+    }
+ ]
