@@ -19,11 +19,11 @@ class StockList extends Component {
 
   render() {
     return (
-      <div className="div">
-        <h1>Stocks</h1>
-          <table key="stocklist" className="data">
-            <thead className="App" className="data">
-              <tr className="data">
+      <div class="ui container">
+        <div class="ui huge header striped center aligned">Stocks</div>
+          <table key="stocklist" class="ui celled striped table">
+            <thead>
+              <tr>
                 <th>Ticker</th>
                 <th>Company Name</th>
                 <th>Sector</th>
@@ -35,10 +35,10 @@ class StockList extends Component {
                 <th>Avg Volume</th>
               </tr>
             </thead>
-            <tbody className="data">
+            <tbody>
               {
-                this.state.stocks.map(stock =>
-                (<tr className="data">
+                this.state.stocks.map(stock => (
+                <tr>
                   <td>{stock.symbol}</td>
                   <td>{stock.name}</td>
                   <td>{stock.sector}</td>
@@ -48,7 +48,8 @@ class StockList extends Component {
                   <td>{stock.max_stock_price}</td>
                   <td>{stock.avg_stock_price}</td>
                   <td>{stock.avg_volume}</td>
-                </tr>)
+                </tr>
+                )
               )}
               </tbody>
             </table>
